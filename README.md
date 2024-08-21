@@ -1,4 +1,4 @@
-## Pllanejamento de estudos
+## Planejamento de estudos
 ---
 ###### Hoje dia 9 de agosto de 2024, eu crio meu "mind map" para conseguir consiliar minhas matérias da faculdade, com o profissional, e aqui crio meu guia de estudo pelo qual vou seguir até chegar ao meu primeiro emprego como DEV, com ajuda de uma das pessoas mais importantes para mim na minha carreirra! @adrianodev97
 
