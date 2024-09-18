@@ -10,8 +10,8 @@ E por la vocês tambem poderam acompanhar meu progresso!
 
 ---
 #### Guia de estudos !
-- 1- Linguagem > Html / CSS
-- 2- Controlhe de versionamento > Git/ Github
-- 3- Linguagem > JS
-- 4- Fremework > React/Vue.js/Angular
+- 1- Aprofundar Reac-> Criando app em react 
+- 2- 
+- 3- 
+- 4- 
 - 5-  
