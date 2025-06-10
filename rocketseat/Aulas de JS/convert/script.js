@@ -31,7 +31,14 @@ const description = document.getElementById("description")
 
  function convertCurrency(amount, price,symbol){
 try {
-  description.textContent = `${symbol}1 = ${price}`
+  description.textContent = `${symbol}1 = ${formatCurrencyBRL(price)}`
+
+  //Calcula o total
+  let total = amount * price
+  total = formatCurrencyBRL(total).replace("R$", "")
+
+  //Mostra o resultado total
+  result.textContent = `${total} Reais` 
 
   footer.classList.add("show-result")
 } catch (error) {
@@ -39,5 +46,12 @@ try {
   footer.classList.remove("show-result") 
 }
 
+ }
+
+ function formatCurrencyBRL (value){
+  return value.toLocaleString("pt-BR", 
+    {style: "currency",
+     currency: "BRL"
+    })
  }
   
