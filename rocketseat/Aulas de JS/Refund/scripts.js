@@ -58,12 +58,30 @@ value = Number(value) / 100
     expenseIcon.setAttribute("src", `img/${newExpense.category_id}.svg`)
     expenseIcon.setAttribute("alt", newExpense.category_name)
     
-    //Adiciona informaçåoes no item
-    expenseItem.append(expenseIcon)
+// Cria info da dispensa
+const expenseInfo = document.createElement("div")
+ expenseInfo.classList.add("expense-info")
 
-    //Adiciona o item na lista 
-    expenseList.append(expenseItem)
+ //Criar o nome da lista
+ const expenseName = document.createElement("strong")
+ expenseName.textContent = newExpense.expense
 
+
+ //Cria a categoria da despesa 
+ const expenseCategory = document.createElement("span")
+ expenseCategory.textContent = newExpense.category_name
+
+
+ //Adiciona nome e categoria na div 
+ expenseInfo.append(expenseName, expenseCategory)
+
+//Adiciona Informação no item
+expenseItem.append(expenseIcon, expenseInfo)
+
+
+ //Adiciona o Item a lista 
+ expenseList.append(expenseItem)
+ 
   }catch (error){
     alert ("Não foi possível Atualizar a lista de despesas.")
     console.log(error)
